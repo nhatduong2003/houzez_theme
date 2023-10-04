@@ -1,0 +1,412 @@
+header.realtyna_mls_sync_header,
+footer.realtyna_mls_sync_footer {
+    position: relative;
+    margin-top: 25px;
+    height: 50px;
+    display: block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+header.realtyna_mls_sync_header:before,
+footer.realtyna_mls_sync_footer:before {
+    content: ' ';
+    width: 100%;
+    height: 5px;
+    background: #2aa9de;
+    position: absolute;
+    top: 50%;
+    display: table;
+}
+
+header.realtyna_mls_sync_header:after,
+footer.realtyna_mls_sync_footer:after {
+    clear: both;
+    content: ' ';
+    display: table;
+}
+
+header.realtyna_mls_sync_header strong,
+footer.realtyna_mls_sync_footer strong {
+    color: #777;
+}
+
+footer.realtyna_mls_sync_footer strong a,
+footer.realtyna_mls_sync_footer strong a:visited,
+footer.realtyna_mls_sync_footer strong a:hover,
+footer.realtyna_mls_sync_footer strong a:active {
+    text-decoration: none;
+    color: #2aa9de;
+}
+
+.realtyna_logo {
+    background: transparent url(../img/icon-realtyna.svg) center center no-repeat;
+    background-size: contain;
+    height: 50px;
+    width: 130px;
+    background-color: #f1f1f1;
+    position: relative;
+    float: right;
+    margin-right: 30px;
+    z-index: 10;
+}
+
+.realtyna_mls_sync {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.realtyna_mls_sync_step_title {
+    margin-bottom: 30px;
+    font-size: 18px;
+    background-color: #2aa9de;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: left;
+    box-shadow: 0 3px 2px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.realtyna_mls_sync ol {
+    position: relative;
+    overflow: hidden;
+    counter-reset: wizard;
+    list-style-type: none;
+    margin-left: 0px;
+}
+
+.realtyna_mls_sync li {
+    position: relative;
+    float: left;
+    width: 25%;
+    text-align: center;
+    color: #2aa9de;
+    list-style: none;
+}
+
+.realtyna_mls_sync .current~li {
+    color: #555;
+}
+
+.realtyna_mls_sync li:before {
+    counter-increment: wizard;
+    content: counter(wizard);
+    display: block;
+    color: #fff;
+    background-color: #2aa9de;
+    border: 2px solid #2aa9de;
+    text-align: center;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    border-radius: 2em;
+    position: relative;
+    left: 50%;
+    margin-bottom: 1em;
+    margin-left: 2em * -0.5;
+    z-index: 1;
+}
+
+.realtyna_mls_sync .current~:before {
+    counter-increment: wizard;
+    content: counter(wizard);
+    display: block;
+    color: black;
+    background-color: #bbb;
+    border: 2px solid #bbb;
+    text-align: center;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    border-radius: 2em;
+    position: relative;
+    left: 50%;
+    margin-bottom: 1em;
+    margin-left: 2em * -0.5;
+    z-index: 1;
+}
+
+.realtyna_mls_sync li~.current:before {
+    counter-increment: wizard;
+    content: counter(wizard);
+    display: block;
+    color: #fff;
+    background-color: #2aa9de;
+    border: 4px solid #fff;
+    text-align: center;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    border-radius: 2em;
+    position: relative;
+    left: 50%;
+    margin-bottom: 1em;
+    margin-left: 2em * -0.5;
+    z-index: 1;
+}
+
+.realtyna_mls_sync li+li:after {
+    content: "";
+    display: block;
+    width: 100%;
+    background-color: #2aa9de;
+    height: 2px;
+    position: absolute;
+    left: -50%;
+    top: 1em;
+    z-index: 0;
+}
+
+.realtyna_mls_sync .current~li:after {
+    background-color: #ccc;
+}
+
+.realtyna_success_text {
+    color: green;
+}
+
+.realtyna_warning_text {
+    color: #d3550b;
+}
+
+.realtyna_error_text {
+    color: red;
+}
+
+.realtyna_success_bg {
+    background-color: #afa;
+}
+
+.realtyna_error_bg {
+    background-color: #faa;
+}
+
+.realtyna_houzez_form {
+    background-color: #E7E9EB;
+    text-align: center;
+    border-radius: 15px;
+    padding: 0.01em 16px;
+    margin: 20px 20%;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)!important;
+}
+
+.realtyna_box_shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.realtyna_houzez_table {
+    background-color: #fff;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.realtyna_houzez_table th {
+    background-color: #b3c0cd;
+}
+
+.realtyna_houzez_table th,
+td {
+    padding: 5px 10px;
+    text-align: left;
+}
+
+.realtyna_houzez_form input[type=text],
+.realtyna_houzez_form input[type=email],
+.realtyna_houzez_form input[type=number],
+.realtyna_houzez_form input[type=password],
+.realtyna_houzez_form input[type=search],
+.realtyna_houzez_form input[type=tel],
+.realtyna_houzez_form input[type=url],
+.realtyna_houzez_form select,
+.realtyna_houzez_form textarea {
+    padding: 5px 10px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    width: 60%;
+    max-width: 60%;
+    height: 40px;
+    font-size: 14px;
+    color: #222;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.rfb-label-container {
+    position: relative;
+    bottom: 30px;
+    right: 70px;
+    display: table;
+    visibility: hidden;
+    float: right;
+}
+
+.rfb-label-text {
+    color: #FFF;
+    background: rgba(51, 51, 51, 0.5);
+    display: table-cell;
+    vertical-align: middle;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.rfb-label-arrow {
+    display: table-cell;
+    vertical-align: middle;
+    color: #333;
+    opacity: 0.5;
+}
+
+.rfb-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 140px;
+    right: 40px;
+    background-color: #494fdd;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 1000;
+    animation: bot-to-top 2s ease-out;
+}
+
+a.rfb-float:hover,
+a.rfb-float:visited,
+a.rfb-float:active {
+    color: #fff;
+    ;
+}
+
+.rfb-btn {
+    clear: both;
+}
+
+.realtyna_floating_button ul {
+    position: fixed;
+    right: 40px;
+    padding-bottom: 20px;
+    bottom: 180px;
+    z-index: 100;
+}
+
+.realtyna_floating_button ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.realtyna_floating_button ul li a {
+    background-color: #494fdd;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 2px 2px 3px #999;
+    width: 60px;
+    height: 60px;
+    display: block;
+}
+
+.realtyna_floating_button ul:hover {
+    visibility: visible!important;
+    opacity: 1!important;
+}
+
+.rfb-floating {
+    font-size: 24px;
+    margin-top: 18px;
+}
+
+a#rfb-menu-share+ul {
+    visibility: hidden;
+}
+
+a#rfb-menu-share:hover+ul {
+    visibility: visible;
+    animation: scale-in 0.5s;
+}
+
+a#rfb-menu-share i {
+    animation: rotate-in 0.5s;
+}
+
+a#rfb-menu-share:hover>i {
+    animation: rotate-out 0.5s;
+}
+
+a.rfb-btn>div.rfb-label-container {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s ease;
+}
+
+a.rfb-btn:hover>div.rfb-label-container {
+    visibility: visible;
+    opacity: 1;
+}
+
+@keyframes bot-to-top {
+    0% {
+        bottom: -140px
+    }
+    50% {
+        bottom: 140px
+    }
+}
+
+@keyframes scale-in {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes rotate-in {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate-out {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .realtyna_houzez_form {
+        margin: 20px 5%;
+    }
+    .realtyna_houzez_form input[type=text],
+    .realtyna_houzez_form input[type=email],
+    .realtyna_houzez_form input[type=number],
+    .realtyna_houzez_form input[type=password],
+    .realtyna_houzez_form input[type=search],
+    .realtyna_houzez_form input[type=tel],
+    .realtyna_houzez_form input[type=url],
+    .realtyna_houzez_form select,
+    .realtyna_houzez_form textarea {
+        width: 80%;
+        max-width: 80%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .realtyna_houzez_form {
+        margin: 20px 25%;
+    }
+}

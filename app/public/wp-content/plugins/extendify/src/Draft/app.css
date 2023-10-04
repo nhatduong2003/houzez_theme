@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.extendify-draft .completion:after {
+    content: "";
+    display: block;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1em;
+    background: linear-gradient(
+        to bottom,
+        rgba(240, 240, 240, 0),
+        rgb(240, 240, 240)
+    );
+    pointer-events: none;
+}
+
+.extendify-draft .completion h1 {
+    font-size: 1em;
+    font-weight: 600;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    line-height: 1em;
+}
+
+.extendify-draft .completion h1:first-child {
+    margin-top: 0;
+}
+
+.extendify-draft .completion h2 {
+    font-size: 1em;
+    font-weight: 600;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    line-height: 1em;
+}
+
+.extendify-draft .completion h3 {
+    font-size: 1em;
+    font-weight: 600;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    line-height: 1em;
+    text-transform: none;
+}
+
+.extendify-draft .completion p:last-child {
+    margin-bottom: 0;
+}

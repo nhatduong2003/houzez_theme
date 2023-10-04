@@ -1,0 +1,141 @@
+#toplevel_page_houzez_dashboard .wp-menu-image img, #toplevel_page_houzez-real-estate .wp-menu-image img {
+    width: 20px; 
+    padding: 5px 0 0; 
+    opacity: 1;
+}
+
+ul.houzez-sortable-list li.ui-sortable-handle {
+    background-color: #004274;
+    margin-top: 5px;
+    padding: 10px 6px;
+    color: #fff;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.houzez_actions .houzez-button-icon {
+    height: 30px;
+    width: 30px;
+    overflow: hidden;
+    margin: 0 0 4px 4px;
+    padding: 5px 0px 0px 5px;
+    line-height: 30px;
+    border: none;
+    overflow: visible;
+} 
+
+/* Tooltip CSS */
+a.tips{
+  position: relative;
+  display: inline;
+}
+a.tips:after{
+  display: block;
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  opacity: 0;
+  content: attr(data-tip); /* might also use attr(title) */
+  height: auto;
+  padding: 0px 12px;
+  z-index: 999;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  background: rgba(0,0,0,0.85);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+a.tips:before {
+  position: absolute;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  left: 32%;
+  bottom: 0px;
+  opacity: 0;
+  content: "";
+  border-style: solid;
+  border-width: 6px 6px 0 6px;
+  border-color: rgba(0,0,0,0.85) transparent transparent transparent;
+}
+a.tips:hover:after{ visibility: visible; opacity: 1; bottom: 34px; }
+a.tips:hover:before{ visibility: visible; opacity: 1; bottom: 28px; }
+
+
+.column-thumbnail, .column-info, .column-price, .column-featured, .column-listing_posted, .column-status, .column-houzez_actions {
+    vertical-align: middle !important;
+}
+
+.column-thumbnail img {
+    max-width: 100%;
+    height: auto;
+}
+
+span.hz-expiry {
+    font-style: italic;
+    color: green;
+}
+.column-status .listing-status {
+    display: flex;
+}
+
+.column-status .listing-status span {
+    background-color: #6C757D;
+    border-radius: 2px;
+    display: inline-block;
+    height: 9px;
+    margin: auto 8px auto 0;
+    width: 9px;
+}
+
+.column-status .listing-status.status-publish span {
+    background-color: #28A745;
+}
+.column-status .listing-status.status-expired span {
+    background-color: #DC3545;
+}
+.column-status .listing-status.status-pending span{
+    background-color: #FFC107;
+}
+
+.column-status .listing-status.status-disapproved span {
+    background-color: #343A40;
+}
+
+.column-status .listing-status.status-on_hold span {
+    background-color: #17A2B8;
+}
+
+.column-status .listing-status.status-houzez_sold span {
+    background-color: #007BFF;
+}
+
+@media (min-width: 1350px) {
+    .column-price {
+        width: 155px;
+    }
+    .column-listing_posted {
+        width: 145px;
+    }
+    .column-featured {
+        width: 70px;
+        text-align: center;
+    }
+    .column-thumbnail {
+        width: 100px;
+    }
+    .column-info {
+        width: 225px;
+    }
+    .column-houzez_actions {
+        width: 102px;
+    }
+    .column-status {
+        width: 130px;
+    }
+}
