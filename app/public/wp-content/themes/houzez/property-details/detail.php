@@ -1,5 +1,5 @@
 <?php global $hide_fields; 
-$hide_fields = array(
+$hide_fields = array (
 	'updated_date' => 0,
 );
 ?>

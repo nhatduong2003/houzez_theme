@@ -584,3 +584,21 @@
 [04-Oct-2023 07:55:24 UTC] PHP Warning:  Attempt to read property "ID" on null in C:\Users\Admin\Local Sites\houzez-themes\app\public\wp-content\themes\houzez\inc\register-scripts.php on line 127
 [04-Oct-2023 07:55:25 UTC] PHP Warning:  Attempt to read property "ID" on null in C:\Users\Admin\Local Sites\houzez-themes\app\public\wp-content\themes\houzez\inc\register-scripts.php on line 127
 [04-Oct-2023 08:17:26 UTC] App: purgeAttachments : error in object 
+[04-Oct-2023 08:19:35 UTC] App: PurgeListings : error in object
+[04-Oct-2023 08:47:06 UTC] App: purgeAttachments : error in object 
+[04-Oct-2023 08:49:07 UTC] App: PurgeListings : error in object
+[04-Oct-2023 09:17:16 UTC] App: purgeAttachments : error in object 
+[04-Oct-2023 09:18:44 UTC] App: PurgeListings : error in object
+[04-Oct-2023 09:21:19 UTC] PHP Warning:  Undefined array key "updated_date" in C:\Users\Admin\Local Sites\houzez-themes\app\public\wp-content\themes\houzez\property-details\detail.php on line 8
+[04-Oct-2023 09:21:22 UTC] PHP Warning:  Undefined array key "updated_date" in C:\Users\Admin\Local Sites\houzez-themes\app\public\wp-content\themes\houzez\property-details\detail.php on line 8
+[04-Oct-2023 09:42:24 UTC] PHP Warning:  Undefined variable $bedrooms_label in C:\Users\Admin\Local Sites\houzez-themes\app\public\wp-content\themes\houzez\template\template-compare.php on line 278
+[04-Oct-2023 09:42:24 UTC] PHP Warning:  Undefined variable $bath_label in C:\Users\Admin\Local Sites\houzez-themes\app\public\wp-content\themes\houzez\template\template-compare.php on line 282
+[04-Oct-2023 09:42:24 UTC] PHP Warning:  Undefined variable $garage_label in C:\Users\Admin\Local Sites\houzez-themes\app\public\wp-content\themes\houzez\template\template-compare.php on line 286
+[04-Oct-2023 09:46:48 UTC] App: purgeAttachments : error in object 
+[04-Oct-2023 09:48:38 UTC] App: PurgeListings : error in object
+[04-Oct-2023 10:16:47 UTC] App: purgeAttachments : error in object 
+[04-Oct-2023 10:18:47 UTC] App: PurgeListings : error in object
+[05-Oct-2023 02:36:05 UTC] App: purgeAttachments : error in object 
+[05-Oct-2023 02:36:05 UTC] App: PurgeListings : error in object
+[05-Oct-2023 02:46:37 UTC] App: purgeAttachments : error in object 
+[05-Oct-2023 02:49:17 UTC] App: PurgeListings : error in object
